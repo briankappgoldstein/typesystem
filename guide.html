@@ -1,0 +1,364 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Demo Site</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Roboto+Condensed:400,700,700i|Suez+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <header class="primary">
+      <div class="row">
+        <div class="small-10 small-centered columns">
+          <nav class="menu-centered">
+            <ul class="vertical medium-horizontal menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="catalog.html">Catalog</a></li>
+              <li><a href="albums.html">Albums</a></li>
+              <li><a href="band.html">Band</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="guide.html">Style Guide</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <header class="secondary page-header">
+        <div class="row">
+          <div class="small-15 columns text-center">
+            <h1>Style Guide</h1>
+            <p>Templating-wise, this row is the Page Title and ideally, meta description</p>
+          </div>
+        </div>
+      </header>
+      <section class="light-bg">
+      <div class="row">
+        <div class="small-15 medium-10 large-6 large-offset-3 columns">
+          <h2 class="text-orange">Performance Budget</h2>
+          <p>The performance budget for this site was established to be:</p>
+          <ul>
+            <li>The homepage must weigh less than <code>1mb</code>, and have a speed index under 3000 on a 3G connection.</li>
+            <li>All other pages must weigh less than <code>650kb</code>, and have a speed index under 1500 on a 3G connection.</li> 
+          </ul>
+          <p>This is obviously only an example. A performance budget is a necessary constraint because we do care about user experience and it enforces discipline on design and development.<p>
+          <p>Using a performance budget is not an excuse to use lowest common denominator design. Just the opposite - <span class="suez">how to achieve complex, interesting, effective designs with the least CSS?</span> That's craft.</p>
+        </div>
+        <aside class="medium-5 large-4 large-pull-1 columns">
+          <h5>For more on Performance Budgets and improving design process to improve development deliverables, see:</h5>
+          <ul>
+            <li><a href="#">Brad Frost</a></li>
+            <li><a href="#">Dan Mall</a></li>
+            <li><a href="#">Mike Monterio</a></li>
+            <li><a href="#">Happy Cog</a></li>
+            <li><a href="#">Filament Group</a></li>
+          </ul>
+        </aside>
+      </div>
+      </section>
+      <section>
+      <div class="row">
+        <div class="small-16 medium-10 large-6 large-offset-3 columns">
+          <h2 class="text-bright-blue">Colors</h2>
+        </div>
+      </div>
+      <div class="row">
+          <div class="large-3 columns">
+            <div class="color-example primary"><p>Text<p></div><p><em>Usage:</em> For Primary Background color.</p>
+          </div>
+          <div class="large-3 columns">
+            <div class="color-example secondary"><p>Text<p></div><p><em>Usage:</em> For Secondary Background color.</p>
+          </div>
+          <div class="large-3 columns">
+            <div class="color-example success"><p>Text<p></div><p><em>Usage:</em> For Success messages color.</p>
+          </div>
+          <div class="large-3 columns">
+            <div class="color-example warning"><p>Text<p></div><p><em>Usage:</em> For warning messages color.</p>
+          </div>
+          <div class="large-3 columns">
+            <div class="color-example alert"><p>Text<p></div><p><em>Usage:</em> For alert color.</p>
+          </div>
+      </div>
+      <div class="row">
+        <div class="small-16 medium-10 large-6 large-offset-3 columns">
+            <p>Be sure to check contrast ratios against WCAG Standards, and test designs in greyscale first! WCAG 2.0 level AA requires a contrast ratio of 4.5:1 for normal text and 3:1 for large text. Level AAA requires a contrast ratio of 7:1 for normal text and 4.5:1 for large text. Large text is defined as 14 point (typically 18.66px) and bold or larger, or 18 point (typically 24px) or larger.</p>
+            <p>The only colors on here that I didn't check for WCAG contrast are the "text" in the example divs. All else pass AA at least. I simply went to a color palette generator and plugged in that color of red as primary. Color palettes should have a logic behind them, but so long as the basic colors are defined, and tested for contrast, nearly anything goes!</p>
+        </div>
+      </div>
+      </section>
+      <section>
+      <div class="row">
+        <div class="small-16 medium-10 large-6 large-offset-3 columns">
+          <h2 class="text-navy">Type</h2>
+          <p>The <code>base</code> is set to: <code>16px = 1 em</code>.
+          <p>The <code>ratio</code> is set to: <code>1.618</code>.
+          <p>The <code>scale</code> is therefore: <code>16 : 1.618</code>. 
+          <h1>Heading 1</h1>
+          <p><em>Usage:</em> Reserved for Page Titles</p>
+          <h2>Heading 2</h2>
+          <p><em>Usage:</em> Section Titles</p> 
+          <h3>Heading 3</h3>
+          <p><em>Usage:</em> Sections within sections? use this to offset from main copy</p> 
+          <h4>Heading 4</h4>
+          <p><em>Usage:</em> Perfect for examples</p> 
+          <h5>Heading 5</h5> 
+          <p><em>Usage:</em> Only use for widget titles.  We want to make it clear what we're pulling attention to, but not pull too much attention</p>
+          <h6>Heading 6</h6>
+          <p><em>Usage:</em> We're only going to use this in the footer for the information down there.</p>
+          <p>For this example, headings are set in <code>Roboto Condensed</code> at regular, bold, and bold italic. all other body elements are set in <code>Lora</code> regular or regular italic. Both <code>Roboto Condensed</code> and <code>Lora</code> are served from <a href="http://fonts.google.com">Google Fonts</a>.</p> 
+          <p>When setting Heading type, our chief concern is to <em>establish hierarchy</em>. When setting body type, our chief concern is <em>readability</em>. The best practice is to set body copy first, then set header type to pair. We can <em>complement</em> a serif body with a sans serif header (or vice versa), we can <em>contrast</em> by using two of the same style (serif+serif, sans+sans), or we can use the same for body and heading, if appropriate. The only real guide here is what works for the project, which is why getting real content as soon as possible is so helpful!</p>
+          <h4 class="text-bright-orange">How to develop Ryhthm</h4>
+          <p>Very. Carefully.</p>
+          <span class="pull-right">line-height + margin = multiple</span>
+          <p>Seriously though, vertical rhythm is difficult to achieve because of different text sizes and layouts. One simple way to achieve basic rhythm is this equation: line-height + margin = multiple. <span class="highlight">Line height is always relative to font size.</span> Since we created our font size above, with modular scale, we can start there. In this example, I settled on a line height of 1.375 for body copy. This is on the tight end of line-height, but gives us simple math to work with. 16px x 1.375 = 22px. Then, I simply added this amount as margin-bottom to pargraphs, yielding 44px. For headings and other text elements, I simply ensured that the total of the element's line height and margin was a multiple of 44px. This way, every line ends up neatly on the base line. You can certainly also set responsive baselines if you're so inclined, however, I tend to think this is overkill and urge you to remember that no one will see a baseline unless you show them it, and it's a guide more than anything else.</p>
+          <p>This is a paragraph. Note how size of the letters, length of the line, and line height. There is no one ideal line length on the web, but aiming between 75-100 characters most of the time is a good goal to shoot for. This helps the eye relax and refocus on to the next line. With the text set as above, the ideal container size for paragraph copy is <code>medium-10 large-6 large-offset-3 columns</code>. You will also note that for above the large breakpoints, the aside and the main copy come together into the middle 11 columns. This eases the reading experience and keeps related content together.</p>
+          <span class="pull-left">Mockups should always use actual copy, as soon as it is available.</span>
+          <p>As we add multiple paragraphs, you can begin to see the rhythm of the type system develop. It's almost impossible to imagine without seeing actual copy in place. <span class="highlight">This is exactly why Lorem Ipsum text can be useful</span>, but in this designer's opinion it's not useful once even prototypical content is available. Mockups should always use actual copy, as soon as it is available. Comps (that is, comprehensive mockups) should never use Lorem ipsum.</p>
+          <span class="pull-right">Comps should never use Lorem Ipsum.</span>
+          <h3 class="text-royal">When to Use Lorem Ipsum:</h3>
+          <ul>
+            <li><em>Use:</em> when typesetting</li>
+            <li><em>Use:</em>  Before copy is available</li>
+            <li><em>Use:</em> In User Flows, Wireframes, and other thinking tools</li>
+            <li><em>Do Not Use:</em> Once any copy is available</li>
+            <li><em>Do Not Use:</em> For Comprehensive Mockups</li>
+            <li><em>Do Not Use:</em> For Dev</li>
+          </ul>
+          <blockquote>"Rhythm... almost impossible to imagine without seeing actual copy in place"</blockquote>
+          <p>In sum, even fake copy is preferable to Lorem Ipsum as soon as possible. In production, we can replace the default presentational classes (e.g. <code>small-16 medium-10 large-7 columns</code>) with rules for the <code>main</code>, <code>article</code>, and <code>aside</code> tags, reducing HTML bloat. The first step to a performant, accessible site is correctly formatted content!</p>
+          <h4 class="text-blue">Variations</h4>
+          <p>Sometimes, we need to draw special attention to elements via the use of display or special text.  Colloquially these are called "Snowflakes", and much like we should not rely on screen size to pre-determine breakpoints, we ought not rely on all heading styles to account for all requirements. If the design requires it, we ought to make variations. Some best practices are to:</p>
+            <ul>
+              <li>Define when variations are to be used, and when they are inappropiate</li>
+              <li>Use from the same font service as the other fonts</li>
+              <li>Only load the weight and style the design needs</li>
+              <li>If possible, consider using an svg instead!</li>
+              <li>The preferred naming convention is a css class named after the font you're inserting.</li>
+              <li>The Filament Group, Agency of the Year 2015 and the industry leaders in performant responsive design, suggest limiting font variations to 5 per page load. We've already hit that limit, but this is just an example.</li>
+            </ul>
+            <p>E.g. <code>.suez</code> will change text to the <span class="suez">Suez One</span>. Variations ought to be used sparingly and after the existing system is exhausted.</p>   
+        </div>
+        <aside class="medium-5 large-4 large-pull-1 columns">
+          <h5>Methods to establish Hierarchy</h5>
+          <p>Here are some of the ways we can show hierarchy with headers:
+            <ul>
+              <li><em>Scale</em> - bigger = more important</li>
+              <li><em>Weight</em> - heavier = more important</li>
+              <li><em>Variety</em> - Exception = more important</li>
+            </ul>
+          </p>
+          <h5>Factors for Readability</h5>
+          <p>Here are some of the criteria for selecting body type:
+            <ul>
+              <li><em>X-height</em> - taller x height = easier to distinguish from farther away</li>
+              <li><em>"I, L, J, T"</em> - more distinct = easier to read</li>
+              <li><em>Kerning</em> - more space between letters = easier to read</li>
+            </ul>
+          </p>
+          <h5>Rules of Thumb</h5>
+          <p>Worth remembering (so we can consciously break them)
+            <ul>
+              <li><em>Font-Size</em> <span class="highlight">12-21 px.</span></li>
+              <li><em>Line-Height</em> <span class="highlight">Generally between 1-1.4 for headings, 1.25-2 for body.</span></li>
+              <li><em>Line-Length</em> <span class="highlight">Ideal for web is between 75-100 characters</span></li>
+            </ul>
+            Generally, text set within these bounds will conform to usability guidelines. Consciously using much larger, smaller, shorter, tighter or wider set text will force the user to react to that decision. 
+          </p>
+          <h5>Performance</h5>
+          <p>A design will be most reliable if the fonts:</p>
+            <ul>
+              <li><em>Are chosen with care</em>, generally from the same provider</li>
+              <li><em>Variations are kept to a minimum</em>, ideally, 5 or less per page.</li>
+              <li><em>Using Font Face Observer</em> to
+                <ol>
+                  <li>Load the page first with system fonts</li>
+                  <li>Check to see if the web fonts have loaded in a short window</li>
+                  <li>If fonts have loaded, append <code>.font-loaded</code> to the body, and replace the system fonts with the web fonts</li>
+                </oL>
+              </li>
+            </ul>
+          </p>
+
+        </aside> 
+      </div>
+      </section>
+      <section>
+      <div class="row">
+        <div class="small-16 medium-10 large-6 large-offset-3 columns">
+          <h2 class="text-orange">Grid</h2>
+          <p>The <code>grid width</code> is set to: <code>1600px</code>.</p>
+          <p>The <code>gutters</code> are set to: <code>18px: small, 36px: medium up</code>.</p> 
+          <p>The <code>number of columns</code> is set to: <code>16</code>.</p>
+          <p>The <code>column width</code> is therefore: <code>82px small and 64px medium-up</code>.</p>
+          <p>I didn't put a ton of thought into the dimensions of this grid, other than to demonstrate that even slightly tweaking the dimensions (1200 wide, 12 columns, 15px gutter or 30px medium up) can help ward off the stale feeling of using a framework.</p>
+          <p>It's important to distinguish here that grid and layout are not the same thing, nor is simply setting the grid a substitute for defining a layout, or, more appropriately for the web, how a layout ought to shift as the web is not fixed to any set of dimensions.</p> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-16 medium-10 large-6 large-offset-3 columns">
+          <h2>Display Patterns</h2>
+          <p>This is where we'd define styles for <code>buttons</code>, <code>forms</code>, and other UI components, like cards, sliders, widgets, etc. Because user experience depends upon consistency of interaction, standards for variables like border radius and amount of padding, transition times, etc., can and should be decided and recorded here. Again, proactively deciding this now saves time in development and bloat in production!</p>
+          <span class="pull-right">The exercise of doing this stuff manually helps me to understand what I'm building at a deeper level.</span>
+          <p>There are style guide generators available, like Pattern Lab or Spry's own Nimble Builder, but I'm old school and the exercise of doing this stuff manually helps me to understand what I'm building at a deeper level.The better a front end developer understands the design intent, the easier it is to not just produce the site, but to produce it in a performant, semantic, accessible, progressively enhanced manner. In short, the closer the front-end developer and the designer work, <span class="highlight">the better the site is for everyone.</span></p>
+          <h4>Buttons</h4>
+          <button class="button">Regular Button</button>
+          <button class="button secondary">Secondary Button</button>
+          <button class="button success">Success Button</button>
+          <p>Only use buttons to indicate something a user should touch to initiate or complete an action. Buttons are not anchors and not inputs on forms, but in very rare cases, you can apply the css class to achieve the desired effect. Only other note is to make it easy on your developer and pick a global border-radius, font-size, style, and padding.</p> 
+          <h4>Forms</h4>
+          <form>
+            <div class="row">
+              <div class="medium-7 columns">
+                <label>Input Label
+                  <input type="text" placeholder=".medium-8.columns">
+                </label>
+              </div>
+              <div class="medium-7 columns">
+                <label>Input Label
+                  <input type="text" placeholder=".medium-8.columns">
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="medium-7 columns">
+                <input type="submit" class="button" value="Submit">
+              </div>
+            </div>
+          </form>
+          <h4>Song Lists</h4>
+        </div>
+      </div>
+      <div class="row small-up-1 medium-up-2 large-up-4">
+        <div class="column">
+          <a href="song.html">
+            <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            <p class="suez">Song Title</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="song.html">
+            <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            <p class="suez">Song Title</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="song.html">
+            <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            <p class="suez">Song Title</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="song.html">
+            <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            <p class="suez">Song Title</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="song.html">
+            <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            <p class="suez">Song Title</p>
+          </a>
+        </div>
+        <div class="column">
+         <a href="song.html">
+            <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            <p class="suez">Song Title</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="song.html">
+            <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            <p class="suez">Song Title</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="song.html">
+            <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            <p class="suez">Song Title</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="song.html">
+            <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            <p class="suez">Song Title</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="song.html">
+            <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            <p class="suez">Song Title</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="song.html">
+            <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            <p class="suez">Song Title</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="song.html">
+            <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            <p class="suez">Song Title</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="song.html">
+            <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            <p class="suez">Song Title</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="song.html">
+            <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            <p class="suez">Song Title</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="song.html">
+            <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            <p class="suez">Song Title</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="song.html">
+            <img src="//placehold.it/300x300" class="thumbnail" alt="">
+            <p class="suez">Song Title</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    </main>
+    <footer class="site-footer primary">
+     <div class="row">
+        <div class="medium-3  columns">
+          <h6>donate form</h6>
+        </div>
+        <div class="medium-3 columns">
+          <h6>contact information</h6>
+        </div>
+        <div class="medium-3 columns">
+          <h6>footer navigation</h6>
+        </div>
+        <div class="medium-3 columns">
+          <h6>newsletter signup</h6>
+        </div>
+        <div class="medium-3 columns">
+          <h6>social media</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-15 columns">
+          <p><small>Copyright Info</small></p>
+        </div>
+      </div>
+    </footer>
+  
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

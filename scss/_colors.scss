@@ -1,0 +1,90 @@
+$base-blue: #00539f;
+$bright-blue: #0095dd;
+$royal: #331e54;
+$navy-blue: #002147;
+$base-orange:  #e66000;
+$bright-orange: #ff9500;
+$highlight: #ffcb00;
+
+.color-example {
+	width:176px;
+	height:110px;
+	display: inline-block;
+	margin-left:0;
+	padding: 1em;
+	margin-bottom: 22px;
+}
+.primary,
+.button {
+	background-color: $base-blue;
+	color: $white;
+	a {
+		color: $white;
+	}
+}
+
+.button, 
+.button.secondary,
+.button.success {
+	&:hover {
+		background-color: scale-color($base-blue, $lightness: -15%)
+	}
+}
+
+.secondary,
+.button.secondary {
+	background-color: $bright-blue;
+	color: $white;
+	a {
+		color: $white;
+	}
+}
+
+.success,
+.button.success {
+	background-color: $royal;
+	color: $white;
+	a {
+		color: $white;
+	}
+}
+
+.warning {
+	background-color: $base-orange;
+	color: $white;
+}
+
+.alert {
+	background-color: $bright-orange;
+	color: $white;
+}
+
+.light-bg {
+	background-color: rgba(230,96,0, 0.1);
+	box-shadow: 0 2px 4px $navy-blue;
+	color: #3b3b3b;
+}
+
+.text-blue {
+    color:$base-blue;
+}
+
+.text-navy{
+	color:$navy-blue;
+}
+
+.text-bright-blue {
+	 color:$bright-blue;
+}
+
+.text-royal {
+	color:$royal;
+}
+
+.text-orange {
+	color:$base-orange;
+}
+
+.text-bright-orange {
+	color:$bright-orange;
+}

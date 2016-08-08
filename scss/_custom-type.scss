@@ -1,0 +1,134 @@
+/* Thanks! https://github.com/daneden/Basehold.it */
+
+@mixin baseline-grid( $line-height:24 ) {
+
+    position: relative;
+
+    &:after {
+        position: absolute;
+        width: auto;
+        height: auto;
+        z-index: 9999;
+        content: '';
+        display: block;
+        pointer-events: none;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: url(http://basehold.it/image.php?height=#{$line-height}) repeat top left;
+    }
+
+    &:active:after {
+        display: none;
+    }
+
+}
+
+/*main { 
+
+    @include baseline-grid(22);
+
+    /* change 24 to your grid size 
+
+}*/
+/*
+-----------------------------------------------
+Typesetting for Spry
+Author:   Brian Goldstein
+Date:     18 July 2016
+16px @ 1:1.618
+100px@ 1:1.618
+----------------------------------------------- */
+
+h1 {
+	font-size: 3.863em; 
+	font-weight: 700;
+   	line-height: 1.0678;
+   	margin-bottom: 22px; 
+}
+h2 {
+	font-size: 2.618em;  
+	text-transform: uppercase;
+    line-height:1.1459;
+    margin-bottom: 19px;
+}
+
+h3 {
+	font-size: 2.387em;
+	font-style: italic; 
+ 	line-height:1.15207;
+ 	margin-bottom: 22px;  
+}
+h4 {
+	font-size: 1.618em;
+	font-weight: 400;
+	line-height:1.2361;
+	margin-bottom: 12px; 
+}
+
+h5 {
+	font-size: 1.476em;
+	font-weight: 700;
+	line-height:1.355;
+	margin-bottom:16px;
+}
+
+h6 {
+	font-size: 1em;
+	line-height:1.375;
+	margin-bottom: 1.375em; /* 22px */
+	font-style: italic;
+} 
+
+p {
+	font-size: 1em; /* 16px */
+	line-height:1.375; /* 22px */
+	margin-bottom: 1.375em; /* 22px */
+}
+
+.suez {
+	font-family: 'Suez One', serif;
+}
+
+.highlight {
+	background-color: #ffcb00;
+	color: #282828;
+}
+
+.pull-left {
+	float: left;
+	font-size: 1.476em;
+    line-height: 1;
+    width: 32%;
+    padding: 9px 0 0 0;
+    border-top: solid 4px #331e54;
+    margin: 1.5% 5% 2% 0;
+    color: #331e54;
+}
+
+.pull-right {
+	float: right;
+	font-size: 1.476em;
+    line-height: 1;
+    width: 32%;
+    padding: 9px 0 0 0;
+    border-top: solid 4px #331e54;
+    margin: 1.5% 0 2% 5%;
+    color: #331e54;
+
+}
+
+ul, ol, dl {
+	line-height: 1.375;
+	margin-bottom: 1.375em;
+}
+
+blockquote {
+    padding: 0 1.25rem 0 1.1875rem;
+    border-left: 4px solid #002147; 
+	font-style: italic;
+	margin: 0 0 30px;
+	line-height: 1.375;
+    color: #002147; 
+}
